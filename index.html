@@ -4,139 +4,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700" rel="stylesheet">
     <title>Daenerys Targaryen Job Hunt</title>
   </head>
   <body>
-    <section class="sidebar">
-      <article>
-        <img src="#" class="profile-pic">
-        <p></p>
+    <!-- NAV SIDEBAR HTML -->
+    <nav class="sidebar bg-dark-gray gray">
+      <article class="profile-pic-container">
+        <img src="images/khaleesi.jpg" class="profile-pic">
+        <h3 class="profile-name">Daenerys Targaryen  <i class="fa fa-caret-down" aria-hidden="true"></i></h3>
       </article>
-      <article>
+      <article class="side-box">
         <h4>Main</h4>
-        <a href="#">HOME</a>
-        <a href="#">JOBS</a>
-        <a href="#">RESUMES</a>
-        <a href="#">TASKS</a>
-        <a href="#">CALENDARS</a>
+        <a href="#" class="link-sidebar">
+        <i class="fa fa-home icon" aria-hidden="true"></i> HOME</a>
+        <a href="#" class="link-sidebar"><i class="fa fa-briefcase icon" aria-hidden="true"></i> JOBS</a>
+        <a href="#" class="link-sidebar"><i class="fa fa-handshake-o icon" aria-hidden="true"></i> PACTS</a>
+        <a href="#" class="link-sidebar">
+        <i class="fa fa-list-alt icon" aria-hidden="true"></i> TASKS</a>
+        <a href="#" class="link-sidebar"><i class="fa fa-calendar-o icon" aria-hidden="true"></i> CALENDARS</a>
       </article>
-      <article>
+      <article class="side-box">
         <h4>Admin</h4>
-        <a href="#">USERS</a>
-        <a href="#">LOCATIONS</a>
-        <a href="#">WORKFLOWS</a>
-        <a href="#">JOB BOARDS</a>
-        <a href="#">SOCIAL</a>
+        <a href="#" class="link-sidebar"><i class="fa fa-users icon" aria-hidden="true"></i> USERS</a>
+        <a href="#" class="link-sidebar"><i class="fa fa-thumb-tack icon" aria-hidden="true"></i> LOCATIONS</a>
+        <a href="#" class="link-sidebar">
+        <i class="fa fa-code-fork icon" aria-hidden="true"></i> WORKFLOWS</a>
+        <a href="#" class="link-sidebar">
+        <i class="fa fa-tasks icon" aria-hidden="true"></i> JOB BOARDS</a>
+        <a href="#" class="link-sidebar">
+        <i class="fa fa-fire icon" aria-hidden="true"></i> SOCIAL</a>
       </article>
-      <article>
+      <article class="side-box">
         <h4>Categories</h4>
-        <input type="checkbox" id="queen" name="queen">
-        <label for="queen">Queen</label>
-        <input type="checkbox" id="dragon" name="dragon">
-        <label for="dragon">Mother of Dragons</label>
-        <input type="checkbox" id="chain-breaker" name="chain-breaker">
-        <label for="chain-breaker">Breaker of Chains</label>
-        <input type="checkbox" id="unburnt" name="unburnt">
-        <label for="unburnt">Unburnt</label>
+        <div class="checkbox">
+          <input type="checkbox" id="queen" name="queen">
+          <label for="queen" class="blue">Queen</label>
+        </div>
+        <div class="checkbox">  
+          <input type="checkbox" id="dragon" name="dragon">
+          <label for="dragon" class="blue">Mother of Dragons</label>
+        </div>
+        <div class="checkbox">  
+          <input type="checkbox" id="chain-breaker" name="chain-breaker">
+          <label for="chain-breaker" class="blue">Breaker of Chains</label>
+        </div>
+        <div class="checkbox">  
+          <input type="checkbox" id="unburnt" name="unburnt">
+          <label for="unburnt" class="blue">Unburnt</label>
+        </div>
       </article>
-    </section>
+    </nav>
+    <!-- MAIN SECTION -->
     <main>
-      <nav>
-        <button class="hamburger"></button>
+      <!-- TOP NAV BAR -->
+      <nav class="top-nav bg-white">
+        <article class="top-nav-button">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i></article>
         <input type="search" class="search" placeholder="Search for a job, task, or resume">
         <div class="nav-buttons">
-          <button class="profile"></button>
-          <button class=""></button>
-          <button></button>
+          <article class="top-nav-button">
+            <i class="fa fa-female fa-2x" aria-hidden="true"></i>
+          </article>
+          <article class="top-nav-button">
+            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+          </article>
+          <article class="top-nav-button">
+            <i class="fa fa-th fa-2x" aria-hidden="true"></i>
+          </article>
         </div>
       </nav>
-      <section class="top-container">
-        <div>
-          <h1>Queen of the 7 Kingdoms</h1>
-          <p>(icon here) King's Landing<a href="#">Preview this post</a></p>
-        </div>
-        <div class="main-buttons">
-          <button class="open"></button>
-          <button class="small-circle"></button>
-          <button class="small-circle"></button>
-          <button class="small-circle"></button>
-        </div>
+      <!-- TOP HEADER -->
+      <section class="top-container bg-white">
+        <section class="heading-container">
+          <div>
+            <h1>Queen of the 7 Kingdoms</h1>
+            <p class="dark-blue"><i class="fa fa-map-marker" aria-hidden="true"></i> King's Landing <a href="#" class="preview">Preview this post</a></p>
+          </div>
+          <div class="main-buttons">
+            <button class="open small-ellipse"><span class="green-dot"><i class="fa fa-circle" aria-hidden="true"></i>
+            </span>OPEN</button>
+            <button class="small-circle flag"></button>
+            <button class="small-circle pencil"></button>
+            <button class="small-circle light"></button>
+          </div>
+        </section>
         <nav class="page-nav">
-          <a href="#" class="page-links">Summary</a>
-          <a href="#" class="page-links">Applicants</a>
-          <a href="#" class="page-links">Job Board</a>
-          <a href="#" class="page-links">Interviews</a>
-          <a href="#" class="page-links">Activity</a>
-          <a href="#" class="page-links">Broadcast</a>
-          <a href="#" class="page-links">Notifications</a>
+          <a href="#" class="link-pages">Summary</a>
+          <a href="#" class="link-pages">Applicants</a>
+          <a href="#" class="link-pages">Job Board</a>
+          <a href="#" class="link-pages">Interviews</a>
+          <a href="#" class="link-pages">Activity</a>
+          <a href="#" class="link-pages">Broadcast</a>
+          <a href="#" class="link-pages">Notifications</a>
         </nav>
       </section>
-      <section class="bottom-container">
-        <section class="circles-container">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <img src="#" class="graph">
+      <!-- BOTTOM CONTAINER -->
+      <!-- CIRCLES AND GRAPH -->
+      <section class="bottom-container bg-blue">
+        <section class="images-container">
+          <section class="circles-container">
+            <div class="circle">25%</div>
+            <div class="circle">60%</div>
+            <div class="circle">40%</div>
+          </section>
+          <img src="images/bar-graph.png" class="graph">
         </section>
-        <section>
-          <article>
-            <header>
-              <h3>JOB DESCRIPTION</h3>
+        <!-- JOB DESCRIPTION BOX -->
+        <section class="job-info-container">
+          <article class="job-box">
+            <header class="white bg-dark-blue">
+              <h3>JOB DESCRIPTION <button>EDIT</button></h3>
             </header>
-            <article>
+            <article class="bg-white">
               <div>
-                <h4></h4>
+                <h4>POSITION TITLE</h4>
+                <p>Queen of the Seven Kingdoms</p>
+              </div>
+              <div>
+                <h4>LOCATION</h4>
+                <p>The Iron Throne</p>
+              </div>
+              <div>
+                <h4>CLAIM</h4>
+                <p>Rightful heir</p>
+              </div>
+              <div>
+                <h4>EXPERIENCE</h4>
+                <p>Birthright</p>
+              </div>
+              <div>
+                <h4>STATUS</h4>
+                <p>Open</p>
+              </div>
+              <div>
+                <h4>DESCRIPTION</h4>
                 <p></p>
               </div>
               <div>
-                <h4></h4>
-                <p></p>
+                <h4>THE HAND</h4>
+                <p><img src="images/tyrion.jpg" class="pic-icon">Tyrion Lannister</p>
               </div>
               <div>
-                <h4></h4>
-                <p></p>
-              </div>
-              <div>
-                <h4></h4>
-                <p></p>
-              </div>
-              <div>
-                <h4></h4>
-                <p></p>
-              </div>
-              <div>
-                <h4></h4>
-                <p></p>
-              </div>
-              <div>
-                <h4></h4>
-                <p><img src="#" class="pic-icon"></p>
-              </div>
-              <div>
-                <h4></h4>
+                <h4>PAYMENT</h4>
                 <p><strong>All the riches in the land</strong></p>
               </div>
             </article>
           </article>
-          <article>
+          <!-- SIDEBAR BOTTOM CONTAINER -->
+          <article class="side-media-container">
             <div class="social-media-container">
-              <button class="social-media-button"></button>
-              <button class="social-media-button"></button>
-              <button class="social-media-button"></button>
+              <button class="social-media-button facebook">
+              <i class="fa fa-facebook" aria-hidden="true"></i> Post to Facebook</button>
+              <button class="social-media-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this Job</button>
+              <button class="social-media-button linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Post to LinkedIn</button>
             </div>
             <div>
               <h2>(icon)Link to this Job</h2>
-              <p></p>
+              <p>Selvage biodiesel cornhole, tbh hot chicken wayfarers vinyl yuccie shaman.</p>
               <input type="text" value="Some text here">
+              <button class="copy-button">Copy</button>
             </div>
             <div>
               <h2>(icon)Use The Button Widget</h2>
-              <p></p>
+              <p>Tattooed coloring book VHS mlkshk wayfarers skateboard taxidermy XOXO</p>
               <input type="text" value="Some text here">
+              <button class="copy-button">Copy</button>
             </div>
             <div>
               <h2>Upload Resumes By Email</h2>
-              <p></p>
+              <p>Dreamcatcher pickled shoreditch put a bird on it.</p>
               <input type="text" value="handofthequeen@stormborn.com">
             </div>
           </article>

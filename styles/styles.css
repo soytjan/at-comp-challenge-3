@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #46494C;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2, 
+h3,
+h4 {
+  font-family: 'Lora', serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bg-dark-gray {
+  background-color: #46494C;
+}
+
+.bg-blue {
+  background-color: #7C93AA;
+}
+
+.bg-dark-blue {
+  background-color: #194668;
+}
+
+.bg-gray {
+  background-color: #C5C3C6;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.gray {
+  color: #C5C3C6;
+}
+
+.dark-blue {
+  color: #194668;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.dark-gray {
+  color: #46494C;
+}
+
+.blue {
+  color: #7C93AA;
+}
+
+/*NAV SIDEBAR STYLINGS*/
+.profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.sidebar {
+  height: 100vh;
+}
+
+.profile-pic {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+.profile-name {
+  text-align: center;
+  line-height: normal;
+}
+
+.link-sidebar {
+  color: #7C93AA;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+  font-size: 0.8em;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.side-box {
+  border-top: 1px solid #4C5C68;
+  padding: 20px 0px 5px 20px;
+}
+
+h4 {
+  font-size: 0.8em;
+}
+
+.checkbox {
+  font-size: 0.8em;
+  margin: 15px 0;
+}
+
+#unburnt {
+  background-color: red;
+}
+
+/*MAIN PAGE STYLINGS*/
+main {
+  height: 100vh;
+}
+
+/*TOP NAV STYLINGS*/
+.top-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+}
+
+.top-nav-button {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #C5C3C6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.search {
+  width: 100%;
+  font-size: 1em;
+  border: 0px solid;
+  border-bottom: 1px solid #C5C3C6;
+  background-image: url('../images/search-icon.gif');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+  text-indent: 40px;
+}
+
+::-webkit-input-placeholder {
+  color: #C5C3C6;
+  text-indent: 40px;
+}
+
+/*TOP HEADER*/
+
+.preview {
+  color: #1985A1;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+
+.green-dot {
+  color: #98fb98;
+}
+
+.small-circle {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.small-ellipse {
+  border-radius: 15px;
+  height: 30px;
+  width: 60px;
+}
+
+.flag {
+  background: url('../images/flag-icon.gif') no-repeat center center;
+  background-size: 15px;
+}
+
+.pencil {
+  background: url('../images/pencil-icon.gif') no-repeat center center;
+  background-size: 15px;
+}
+
+.light {
+  background: url('../images/light-icon.gif') no-repeat center center;
+  background-size: 15px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+/*BOTTOM CONTAINER*/
+.bottom-container {
+  display: grid;
+/*  grid-template-columns: 33% 33% 33%;*/
+  grid-template-rows: 30% 70%;
+}
+
+/* CIRCLE AND GRAPH SECTION */
+.circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #46494C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles-container {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.graph {
+  width: 338px;
+  height: 200px;
+}
+
+.images-container {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* JOB DESCRIPTION SECTION*/
+.job-info-container {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 66% auto 28%;
+}
+
+.job-box {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.pic-icon {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+/*SIDEBAR BOTTOM CONTAINER*/
+.side-media-container {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  }
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media-button {
+  color: #FFFFFF;
+  height: 35px;
+  border: 0px;
+  font-size: 0.8em;
+  border-radius: 0;
+}
+
+.facebook {
+  background-color: #4867AD;
+}
+
+.twitter {
+  background-color: #48A0EC;
+}
+
+.linkedin {
+  background-color: #2F76B0;
+}
