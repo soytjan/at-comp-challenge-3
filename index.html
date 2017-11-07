@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400|Raleway:400,600" rel="stylesheet">
     <title>Daenerys Targaryen Job Hunt</title>
   </head>
   <body>
@@ -39,19 +39,19 @@
       <article class="side-box">
         <h4>Categories</h4>
         <div class="checkbox">
-          <input type="checkbox" id="queen" name="queen">
+          <input type="checkbox" id="queen" class="icon" name="queen">
           <label for="queen" class="blue">Queen</label>
         </div>
         <div class="checkbox">  
-          <input type="checkbox" id="dragon" name="dragon">
+          <input type="checkbox" id="dragon" class="icon" name="dragon">
           <label for="dragon" class="blue">Mother of Dragons</label>
         </div>
         <div class="checkbox">  
-          <input type="checkbox" id="chain-breaker" name="chain-breaker">
+          <input type="checkbox" id="chain-breaker" class="icon" name="chain-breaker">
           <label for="chain-breaker" class="blue">Breaker of Chains</label>
         </div>
         <div class="checkbox">  
-          <input type="checkbox" id="unburnt" name="unburnt">
+          <input type="checkbox" id="unburnt" class="icon" name="unburnt">
           <label for="unburnt" class="blue">Unburnt</label>
         </div>
       </article>
@@ -60,7 +60,7 @@
     <main>
       <!-- TOP NAV BAR -->
       <nav class="top-nav bg-white">
-        <article class="top-nav-button">
+        <article class="top-nav-button hamburger">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i></article>
         <input type="search" class="search" placeholder="Search for a job, task, or resume">
         <div class="nav-buttons">
@@ -91,7 +91,7 @@
           </div>
         </section>
         <nav class="page-nav">
-          <a href="#" class="link-pages">Summary</a>
+          <a href="#" class="link-pages active">Summary</a>
           <a href="#" class="link-pages">Applicants</a>
           <a href="#" class="link-pages">Job Board</a>
           <a href="#" class="link-pages">Interviews</a>
@@ -104,50 +104,56 @@
       <!-- CIRCLES AND GRAPH -->
       <section class="bottom-container bg-blue">
         <section class="images-container">
-          <section class="circles-container">
-            <div class="circle">25%</div>
-            <div class="circle">60%</div>
-            <div class="circle">40%</div>
-          </section>
-          <img src="images/bar-graph.png" class="graph">
+            <section class="circles-container">
+              <div class="circle circle1"><span class="big-number">75%</span>POWER</div>
+              <div class="middle-circle">
+                <div class="circle circle2"><span class="big-number">50%</span>FIRE</div>
+                <span class="round-label">TOTAL DRAGONS</span>
+              </div>  
+              <div class="circle circle3"><span class="big-number">25%</span>STRENGTH</div>
+            </section>
+          <section class="graph-container">  
+            <img src="images/GOT-graph.jpg" class="graph">
+            <span class="round-label graph-label">THE RELATIONSHIPS</span>
+          </section>  
         </section>
         <!-- JOB DESCRIPTION BOX -->
         <section class="job-info-container">
           <article class="job-box">
             <header class="white bg-dark-blue">
-              <h3>JOB DESCRIPTION <button>EDIT</button></h3>
+              <h3>JOB DESCRIPTION <button class="edit-button"><i class="fa fa-pencil icon" aria-hidden="true"></i> EDIT</button></h3>
             </header>
-            <article class="bg-white">
-              <div>
-                <h4>POSITION TITLE</h4>
+            <article class="bg-white info-section">
+              <div class="info-line top-line">
+                <h4 class="title-line">POSITION TITLE</h4>
                 <p>Queen of the Seven Kingdoms</p>
               </div>
-              <div>
-                <h4>LOCATION</h4>
+              <div class="info-line">
+                <h4 class="title-line">LOCATION</h4>
                 <p>The Iron Throne</p>
               </div>
-              <div>
-                <h4>CLAIM</h4>
+              <div class="info-line">
+                <h4 class="title-line">CLAIM</h4>
                 <p>Rightful heir</p>
               </div>
-              <div>
-                <h4>EXPERIENCE</h4>
+              <div class="info-line">
+                <h4 class="title-line">EXPERIENCE</h4>
                 <p>Birthright</p>
               </div>
-              <div>
-                <h4>STATUS</h4>
+              <div class="info-line">
+                <h4 class="title-line">STATUS</h4>
                 <p>Open</p>
               </div>
-              <div>
-                <h4>DESCRIPTION</h4>
-                <p></p>
+              <div class="info-line">
+                <h4 class="title-line description">DESCRIPTION</h4>
+                <p>"Do you know what kept me standing through all those years in exile? Faith. Not in any gods, not in myths and legends. In myself. In Daenerys Targaryen. The world hadn't seen a dragon in centuries until my children were born. The Dothraki hadn't crossed the sea, any sea. They did for me. I was born to rule the Seven Kingdoms, and I will."</p>
               </div>
-              <div>
-                <h4>THE HAND</h4>
-                <p><img src="images/tyrion.jpg" class="pic-icon">Tyrion Lannister</p>
+              <div class="info-line">
+                <h4 class="title-line">THE HAND</h4>
+                <p class="img-p"><img src="images/tyrion.jpg" class="pic-icon">Tyrion Lannister</p>
               </div>
-              <div>
-                <h4>PAYMENT</h4>
+              <div class="info-line">
+                <h4 class="title-line">PAYMENT</h4>
                 <p><strong>All the riches in the land</strong></p>
               </div>
             </article>
@@ -160,22 +166,26 @@
               <button class="social-media-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this Job</button>
               <button class="social-media-button linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Post to LinkedIn</button>
             </div>
-            <div>
-              <h2>(icon)Link to this Job</h2>
+            <div class="middle-section-sidebar">
+              <h2><i class="fa fa-globe icon" aria-hidden="true"></i>Link to this Job</h2>
               <p>Selvage biodiesel cornhole, tbh hot chicken wayfarers vinyl yuccie shaman.</p>
-              <input type="text" value="Some text here">
-              <button class="copy-button">Copy</button>
+              <div class="input-copy-container">
+                <input type="text" class="input-sidebar" value="Some text here">
+                <button class="copy-button">Copy</button>
+              </div>  
             </div>
-            <div>
-              <h2>(icon)Use The Button Widget</h2>
+            <div class="middle-section-sidebar">
+              <h2><i class="fa fa-pagelines icon" aria-hidden="true"></i> Use The Button Widget</h2>
               <p>Tattooed coloring book VHS mlkshk wayfarers skateboard taxidermy XOXO</p>
-              <input type="text" value="Some text here">
-              <button class="copy-button">Copy</button>
+              <div class="input-copy-container">
+                <input type="text" class="input-sidebar" value="Some text here">
+                <button class="copy-button">Copy</button>
+              </div> 
             </div>
-            <div>
-              <h2>Upload Resumes By Email</h2>
+            <div class="bottom-section-sidebar">
+              <h2><i class="fa fa-paper-plane-o icon" aria-hidden="true"></i> Upload Resumes By Email</h2>
               <p>Dreamcatcher pickled shoreditch put a bird on it.</p>
-              <input type="text" value="handofthequeen@stormborn.com">
+              <input type="text" class="input-sidebar email" value="handofthequeen@stormborn.com">
             </div>
           </article>
         </section>  
