@@ -196,12 +196,20 @@ button {
 
 /*MAIN HEADER*/
 
-.preview {
-  color: #5E83BA;
+.active {
+  border-bottom: 2.5px solid #1985A1;
+  color: #46494C;
 }
 
-.preview:hover {
-  color: #1985A1;
+.flag {
+  background: url('../images/flag-icon.gif') no-repeat center center;
+  background-size: 15px;
+}
+
+.flag:hover {
+  background-color: #194668;
+  background-size: 15px;
+  background: url('../images/flag-white.gif') no-repeat center center;
 }
 
 .green-dot {
@@ -215,11 +223,62 @@ button {
   padding: 25px 35px;
 }
 
+.light {
+  background: url('../images/light-icon.gif') no-repeat center center;
+  background-size: 15px;
+}
+
+.light:hover {
+  background-color: #194668;
+  background-size: 15px;
+  background: url('../images/light-white.gif') no-repeat center center;
+}
+
+.link-pages {
+  color: #194668;
+  font-family: 'Cinzel', serif;
+  padding-bottom: 20px;
+}
+
+.link-pages:hover {
+  color: #1985A1;
+}
+
 .main-buttons {
   align-items: center;
   display: flex;
   justify-content: space-around;
   width: 260px;
+}
+
+.open {
+  font-weight: 600;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px 0px;
+  width: 800px;
+}
+
+.pencil {
+  background: url('../images/pencil-icon.gif') no-repeat center center;
+  background-size: 15px;
+}
+
+.pencil:hover {
+  background-color: #194668;
+  background-size: 15px;
+  background: url('../images/pencil-white.gif') no-repeat center center;
+}
+
+.preview {
+  color: #5E83BA;
+}
+
+.preview:hover {
+  color: #1985A1;
 }
 
 .small-circle {
@@ -237,65 +296,6 @@ button {
 .small-ellipse:hover {
   background-color: #194668;
   color: white;
-}
-
-.open {
-  font-weight: 600;
-}
-
-.flag {
-  background: url('../images/flag-icon.gif') no-repeat center center;
-  background-size: 15px;
-}
-
-.pencil {
-  background: url('../images/pencil-icon.gif') no-repeat center center;
-  background-size: 15px;
-}
-
-.light {
-  background: url('../images/light-icon.gif') no-repeat center center;
-  background-size: 15px;
-}
-
-.flag:hover {
-  background-color: #194668;
-  background-size: 15px;
-  background: url('../images/flag-white.gif') no-repeat center center;
-}
-
-.pencil:hover {
-  background-color: #194668;
-  background-size: 15px;
-  background: url('../images/pencil-white.gif') no-repeat center center;
-}
-
-.light:hover {
-  background-color: #194668;
-  background-size: 15px;
-  background: url('../images/light-white.gif') no-repeat center center;
-}
-
-.page-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 35px 0px;
-  width: 800px;
-}
-
-.link-pages {
-  color: #194668;
-  font-family: 'Cinzel', serif;
-  padding-bottom: 20px;
-}
-
-.link-pages:hover {
-  color: #1985A1;
-}
-
-.active {
-  border-bottom: 2.5px solid #1985A1;
-  color: #46494C;
 }
 
 /*BOTTOM CONTAINER*/
