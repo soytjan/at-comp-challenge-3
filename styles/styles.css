@@ -207,9 +207,9 @@ button {
 }
 
 .flag:hover {
-  background-color: #194668;
-  background-size: 15px;
   background: url('../images/flag-white.gif') no-repeat center center;
+  background-size: 15px;
+  background-color: #194668;
 }
 
 .green-dot {
@@ -229,9 +229,9 @@ button {
 }
 
 .light:hover {
+  background: url('../images/light-white.gif') no-repeat center center;
   background-color: #194668;
   background-size: 15px;
-  background: url('../images/light-white.gif') no-repeat center center;
 }
 
 .link-pages {
@@ -268,9 +268,9 @@ button {
 }
 
 .pencil:hover {
-  background-color: #194668;
-  background-size: 15px;
   background: url('../images/pencil-white.gif') no-repeat center center;
+  background-size: 15px;
+  background-color: #194668;
 }
 
 .preview {
